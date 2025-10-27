@@ -36,10 +36,7 @@ fn main(){
                                 println!("You guessed after {count} attempts...");
                                 break;
             }
-
         }
-
-
     }
 }
 

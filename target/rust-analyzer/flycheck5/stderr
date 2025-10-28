@@ -1,0 +1,35 @@
+   0.018431100s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint: stale: changed "D:\\Rust_PL\\functions_03_03\\src\\main.rs"
+   0.018466700s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint:           (vs) "D:\\Rust_PL\\functions_03_03\\target\\debug\\.fingerprint\\functions_04-caa43b3e35abda7b\\dep-bin-functions_04"
+   0.018474500s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13406101608, nanos: 674845400 } < FileTime { seconds: 13406101744, nanos: 100281200 }
+   0.018720500s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint: fingerprint dirty for functions_04 v0.1.0 (D:\Rust_PL\functions_03_03)/Check { test: false }/TargetInner { name: "functions_04", doc: true, ..: with_path("D:\\Rust_PL\\functions_03_03\\src\\main.rs", Edition2024) }
+   0.018745300s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\Rust_PL\\functions_03_03\\target\\debug\\.fingerprint\\functions_04-caa43b3e35abda7b\\dep-bin-functions_04", reference_mtime: FileTime { seconds: 13406101608, nanos: 674845400 }, stale: "D:\\Rust_PL\\functions_03_03\\src\\main.rs", stale_mtime: FileTime { seconds: 13406101744, nanos: 100281200 } }))
+   0.019694400s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint: fingerprint error for functions_04 v0.1.0 (D:\Rust_PL\functions_03_03)/Check { test: true }/TargetInner { name: "functions_04", doc: true, ..: with_path("D:\\Rust_PL\\functions_03_03\\src\\main.rs", Edition2024) }
+   0.019720100s  INFO prepare_target{force=false package_id=functions_04 v0.1.0 (D:\Rust_PL\functions_03_03) target="functions_04"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Rust_PL\functions_03_03\target\debug\.fingerprint\functions_04-886fe36e24f746af\test-bin-functions_04`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking functions_04 v0.1.0 (D:\Rust_PL\functions_03_03)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s

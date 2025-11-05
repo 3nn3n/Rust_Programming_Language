@@ -1,0 +1,58 @@
+   0.020562800s  INFO prepare_target{force=false package_id=struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program) target="struct_example_program"}: cargo::core::compiler::fingerprint: fingerprint error for struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program)/Check { test: false }/TargetInner { name: "struct_example_program", doc: true, ..: with_path("D:\\Rust_PL\\05_02_struct_example_program\\src\\main.rs", Edition2024) }
+   0.020631600s  INFO prepare_target{force=false package_id=struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program) target="struct_example_program"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Rust_PL\05_02_struct_example_program\target\debug\.fingerprint\struct_example_program-405cee5a26d51c3b\bin-struct_example_program`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.046984800s  INFO prepare_target{force=false package_id=struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program) target="struct_example_program"}: cargo::core::compiler::fingerprint: fingerprint error for struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program)/Check { test: true }/TargetInner { name: "struct_example_program", doc: true, ..: with_path("D:\\Rust_PL\\05_02_struct_example_program\\src\\main.rs", Edition2024) }
+   0.047021600s  INFO prepare_target{force=false package_id=struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program) target="struct_example_program"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Rust_PL\05_02_struct_example_program\target\debug\.fingerprint\struct_example_program-c745458221367757\test-bin-struct_example_program`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking struct_example_program v0.1.0 (D:\Rust_PL\05_02_struct_example_program)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.73s

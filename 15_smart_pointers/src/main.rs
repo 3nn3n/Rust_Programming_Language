@@ -1,6 +1,16 @@
 use crate::List::{Cons, Nil};
 use std::ops::Deref;
 
+struct CustomSmartPointer {
+        data: String,
+}
+
+impl Drop for CustomSmartPointer {
+        fn drop(&mut self) {
+            println!("Dropping CustomSmartPointer with data: {}", self.data);
+        }
+    }
+
 enum List {
     Cons(i32, Box<List>),
     Nil,
@@ -47,9 +57,25 @@ fn main() {
     let name = MyBox(String::from("Rust"));
     hello(&name);
 
+    //running code on cleanup with Drop trait
+    let c = CustomSmartPointer {
+        data: String::from("my stuff"),
+    };
+
+    drop(c);
+    println!("CustomSmartPointer dropped before the end of main.");
+
+
+    let _d = CustomSmartPointer {
+        data: String::from("other stuff"),
+    };
+    println!("CustomSmartPointers created.");
+   
+
 
 }
 
 fn hello(name: &str) {
     println!("Hello, {}!", name);
 }
+

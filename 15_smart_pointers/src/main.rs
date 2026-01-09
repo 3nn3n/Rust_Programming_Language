@@ -91,6 +91,11 @@ fn main() {
     }
     println!("Count after c goes out of scope = {}", Rc::strong_count(&a));
 
+    // Using interior mutability
+    //testing with mock objects 
+    // 
+    
+
 
 
 }
